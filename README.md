@@ -2,7 +2,7 @@
 3D printed insert for Infinity the Game designed for the Feldherr Mini Bags (https://www.feldherr.net/feldherr-mini/)
 It gives you enough room to hold all your Minis, round 25mm token, dice, classified deck, rulers, templates and everything else you need for a great game of Infinity. Additionally there is a command board to make it easier for both players to keep up with the order count.
 
-@TODO insert image here
+![Image from printed insert](images/complete_insert.JPG)
 
 The insert is designed with OpenSCAD (http://www.openscad.org/). Feel free to modify it to your needs and send in pull requests to make this insert better.
 # Miniature Storage

@@ -40,7 +40,7 @@ intersection() {
        }
        // movement template
        translate([0,0,height-3])linear_extrude(height=height - base_thickness+1) {
-           polygon(points=[ [ 100,155], [width-15,155], [195,65], [130,97]]);
+           polygon(points=[ [ 100,155], [width-15,155], [195,65], [130,97],[115,128],[100,135]]);
        }
     }
     

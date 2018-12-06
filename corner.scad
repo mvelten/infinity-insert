@@ -18,6 +18,9 @@ rotate([90,0,0]) {
         difference() {
             cube([edge,edge, 2 * thickness + slot]);
             translate([margin,margin,thickness]) cube([edge+2,edge+1,slot]);
+            
+            // bottom magnet hole, uncomment to change orientation. you need two of each
+            //translate([8.5, 18, -1 ]) cylinder(r=magnet_radius, h=magnet_thickness+1);
             translate([18, 8.5, -1 ]) cylinder(r=magnet_radius, h=magnet_thickness+1);
         }
         
