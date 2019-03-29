@@ -9,10 +9,12 @@ token_size = 26;
 s7=57; // size of a silhouette 7 base plus 2mm margin
 card_height=96.2;
 
-
-// switch between difference() and intersection() for the other half
 //intersection(){
 difference(){
+    
+// switch between difference() and intersection() for the other half
+intersection(){
+//difference(){
 
 intersection() {
     union() {
@@ -93,5 +95,11 @@ intersection() {
            translate([-1,-1,-THICK-1])
            linear_extrude(height=tray_height + 5 + THICK) {
             polygon(points=[[0,0],[0,base_height+2], [140,base_height+2],[140,135],[120, 125],[120,90],[140,80],[120,60],[120,40],[140,15],[140,0]]);
+    }
+}
+   color([0,1,0]) 
+           translate([-1,-1,-10])
+           linear_extrude(tray_height=tray_height + 5) {
+              polygon(points=[[0,0],[0,base_height/2],[base_width+2, base_height/2],[base_width +2,0]]);
     }
 }

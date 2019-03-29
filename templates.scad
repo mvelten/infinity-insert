@@ -6,8 +6,11 @@ magnet_height=2.2;
 spacing=10;
 base_thickness=5;
 
-//difference() {
-intersection() {
+//intersection() {
+difference(){
+    
+difference() {
+//intersection() {
 
 intersection() {
     difference() {
@@ -56,4 +59,10 @@ intersection() {
     }
 
 
+}
+   color([0,1,0]) 
+           translate([-1,-1,-1])
+           linear_extrude(height=height + 5) {
+              polygon(points=[[0,0],[0,length/2],[width+2, length/2],[width +2,0]]);
+    }
 }

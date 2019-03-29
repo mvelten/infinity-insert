@@ -14,6 +14,9 @@ wheel_radius=25;
 //difference() {
 intersection() {
 
+difference() {
+//intersection() {
+
 intersection() {
     difference() {
         // base plate
@@ -115,4 +118,10 @@ intersection() {
             linear_extrude(height=height + 5) {
                 polygon(points=[[0,0],[0,length+2],[width/2+2, length+2],[width/2-25, length-40],[width/2-25, length-60],[width/2, length-80],[width/2-25, length-100],[width/2-25, length-120],[width/2, length-150],[width/2 +2,0]]);
         }    
+}
+   color([0,1,0]) 
+           translate([-1,-1,-1])
+           linear_extrude(height=height + 5) {
+              polygon(points=[[0,0],[0,length/2],[width+2, length/2],[width +2,0]]);
+    }
 }
